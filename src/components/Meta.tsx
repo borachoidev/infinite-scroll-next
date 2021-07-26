@@ -1,11 +1,11 @@
-import Head from "next/head";
+import Head from 'next/head'
 interface Props {
-  title: string;
-  contentTitle?: string;
-  url?: string;
-  type?: string;
-  image: string;
-  description?: string;
+  title: string
+  contentTitle?: string
+  url?: string
+  type?: string
+  image?: string
+  description?: string
 }
 
 const Meta = ({ metaTag }: { metaTag: Props }) => {
@@ -18,7 +18,7 @@ const Meta = ({ metaTag }: { metaTag: Props }) => {
       <meta property="og:image" content={metaTag.image} />
       <meta property="og:description" content={metaTag.description} />
     </Head>
-  );
-};
+  )
+}
 
-export default Meta;
+export default Meta
